@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS task-03</title>
+  </head>
+  <body>
+    <label for="num1">1st Number</label>
+    <input type="text" name="num1" id="num1" /><br />
+    <label for="num2">2nd Number</label>
+    <input type="text" name="num2" id="num2" /><br />
+    <button class="div" onclick="division()">Division</button>
+    <button class="multiply" onclick="multiply()">Multiply</button>
+    <p>The result is <span id="result"></span></p>
+  </body>
+  <script>
+    function division() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      if (num2 === 0) {
+        document.getElementById("result").innerHTML = "Cannot be divided by 0";
+      } else {
+        const res = num1 / num2;
+        document.getElementById("result").innerHTML = res;
+      }
+    }
+    function multiply() {
+      const num1 = document.getElementById("num1").value;
+      const num2 = document.getElementById("num2").value;
+
+      const res = num1 * num2;
+      document.getElementById("result").innerHTML = res;
+    }
+  </script>
+</html>

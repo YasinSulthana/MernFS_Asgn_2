@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS task-01</title>
+  </head>
+
+  <script>
+    function reverseNumber(x) {
+      const reversedString = x.toString().split("").reverse().join("");
+      const reversedNumber = parseInt(reversedString, 10);
+
+      return reversedNumber;
+    }
+    const x = 12345;
+    const reversedNum = reverseNumber(x);
+    console.log("original number is " + x);
+    console.log("Reveresed number is " + reversedNum);
+  </script>
+  <body>
+    <h1>reverse a number using JS and print in the console</h1>
+    <p>Open console by inspecting</p>
+  </body>
+</html>
